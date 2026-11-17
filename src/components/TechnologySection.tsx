@@ -53,8 +53,8 @@ const THREE_TECH_RESOURCES: TechItem[] = [
       'Eficácia em tendinopatias crônicas de ombro, cotovelo e joelho',
       'Estímulo regenerativo sem incisões ou internação'
     ],
-    image: '/images/tech-ondas-choque.jpg',
-    imageAlt: 'Aplicação de equipamento de ondas de choque radiais da BTL'
+    image: '/images/aparelho-ondas-choque-btl.jpg',
+    imageAlt: 'Aparelho de Ondas de Choque Radiais da BTL no consultório do Dr. Sergio Leopolski'
   },
   {
     id: 'btl-sis',
@@ -69,8 +69,8 @@ const THREE_TECH_RESOURCES: TechItem[] = [
       'Modulação neuromuscular e relaxamento de contraturas',
       'Tratamento seguro, confortável e não invasivo'
     ],
-    image: '/images/tech-sis.jpg',
-    imageAlt: 'Aplicação do Sistema BTL SIS Elite de estimulação eletromagnética de alta intensidade'
+    image: '/images/aparelho-btl-sis-elite.jpg',
+    imageAlt: 'Aparelho Sistema BTL SIS Elite no consultório do Dr. Sergio Leopolski'
   }
 ];
 
