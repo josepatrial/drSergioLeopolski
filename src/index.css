@@ -14,68 +14,75 @@
   }
 
   body {
-    background-color: #ffffff;
-    color: #0d284e;
+    background-color: #fbf8f3;
+    color: #2b1810;
   }
 }
 
 /* Glassmorphism styling */
 .glass-nav {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(253, 251, 248, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
 /* Animations */
-@keyframes pulseGreen {
+@keyframes pulseCaramel {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5);
+    box-shadow: 0 0 0 0 rgba(184, 104, 53, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 16px rgba(22, 163, 74, 0);
+    box-shadow: 0 0 0 16px rgba(184, 104, 53, 0);
   }
 }
 
 .animate-whatsapp-pulse {
-  animation: pulseGreen 2.2s infinite;
+  animation: pulseCaramel 2.2s infinite;
 }
 
-/* Medical Modern Grids & Patterns */
+/* Luxury Silk Waves Background Pattern */
+.bg-silk-waves {
+  background-image: 
+    radial-gradient(ellipse 65% 55% at 5% 45%, rgba(223, 202, 169, 0.28) 0%, transparent 70%),
+    radial-gradient(ellipse 65% 50% at 95% 50%, rgba(214, 178, 138, 0.25) 0%, transparent 70%);
+}
+
+/* Medical Modern Grids & Warm Patterns */
 .bg-medical-grid {
   background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(13, 40, 78, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(13, 40, 78, 0.035) 1px, transparent 1px);
+    linear-gradient(to right, rgba(67, 39, 22, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(67, 39, 22, 0.035) 1px, transparent 1px);
 }
 
 .bg-medical-grid-dark {
   background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(237, 216, 195, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(237, 216, 195, 0.05) 1px, transparent 1px);
 }
 
-/* Clean Custom Scrollbar */
+/* Clean Custom Scrollbar in Warm Amber */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #f5eee3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d4b494;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #16a34a;
+  background: #b86835;
 }

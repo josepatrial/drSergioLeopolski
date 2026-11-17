@@ -36,23 +36,23 @@ export const TestimonialsSection: React.FC = () => {
     <section
       id="depoimentos"
       aria-labelledby="testimonials-heading"
-      className="py-20 lg:py-28 bg-white border-t border-slate-200 overflow-hidden"
+      className="py-20 lg:py-28 bg-[#fbf8f3] border-t border-[#ebdccb] overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Carousel Controls */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <div className="max-w-3xl space-y-3.5">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-              <Heart className="w-4 h-4 text-emerald-600 fill-emerald-600" />
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#9c5225] bg-[#f9ede2] px-3.5 py-1 rounded-full border border-[#ebdccb]">
+              <Heart className="w-4 h-4 text-[#b86835] fill-[#b86835]" />
               <span>Experiência dos Pacientes</span>
             </div>
             <h2
               id="testimonials-heading"
-              className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-950 leading-tight"
+              className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2b1810] leading-tight"
             >
               Cuidado humanizado e confiança comprovada.
             </h2>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#523c30] leading-relaxed font-normal">
               Veja os relatos de quem confiou seu tratamento ao Dr. Sergio Leopolski na {CLINIC_INFO.clinicName} em Santo Antônio da Platina – PR.
             </p>
           </div>
@@ -63,7 +63,7 @@ export const TestimonialsSection: React.FC = () => {
               <button
                 type="button"
                 onClick={prevSlide}
-                className="w-11 h-11 rounded-xl bg-slate-100 hover:bg-emerald-600 text-navy-950 hover:text-white flex items-center justify-center transition-all shadow-sm active:scale-95"
+                className="w-11 h-11 rounded-2xl bg-white hover:bg-[#b86835] text-[#2b1810] hover:text-white border border-[#ebdccb] flex items-center justify-center transition-all shadow-sm active:scale-95"
                 aria-label="Depoimento anterior"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -71,7 +71,7 @@ export const TestimonialsSection: React.FC = () => {
               <button
                 type="button"
                 onClick={nextSlide}
-                className="w-11 h-11 rounded-xl bg-slate-100 hover:bg-emerald-600 text-navy-950 hover:text-white flex items-center justify-center transition-all shadow-sm active:scale-95"
+                className="w-11 h-11 rounded-2xl bg-white hover:bg-[#b86835] text-[#2b1810] hover:text-white border border-[#ebdccb] flex items-center justify-center transition-all shadow-sm active:scale-95"
                 aria-label="Próximo depoimento"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -82,7 +82,7 @@ export const TestimonialsSection: React.FC = () => {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-emerald-glow transition-all"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[#b86835] hover:bg-[#9a4f27] text-white text-xs sm:text-sm font-bold shadow-md transition-all active:scale-95"
             >
               <MessageCircle className="w-4 h-4 fill-white" />
               <span>Agendar Consulta</span>
@@ -105,37 +105,37 @@ export const TestimonialsSection: React.FC = () => {
                   className="px-3 shrink-0"
                   style={{ width: `${100 / itemsPerPage}%` }}
                 >
-                  <div className="h-full bg-slate-50/70 hover:bg-white p-7 sm:p-8 rounded-2xl border-2 border-slate-200 hover:border-emerald-500 shadow-card hover:shadow-premium-hover transition-all duration-300 flex flex-col justify-between relative group">
+                  <div className="h-full bg-white hover:bg-[#fdfbf9] p-7 sm:p-8 rounded-3xl border border-[#ebdccb] hover:border-[#b86835]/40 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
                     {/* Background Decorative Quote */}
-                    <Quote className="absolute top-6 right-6 w-10 h-10 text-emerald-600/10 group-hover:text-emerald-600/20 transition-colors pointer-events-none" />
+                    <Quote className="absolute top-6 right-6 w-10 h-10 text-[#b86835]/10 group-hover:text-[#b86835]/20 transition-colors pointer-events-none" />
 
                     <div className="space-y-4">
                       {/* Rating & Tag */}
                       <div className="flex flex-wrap items-center justify-between gap-2">
-                        <div className="flex items-center gap-1 text-amber-400">
+                        <div className="flex items-center gap-1 text-[#b86835]">
                           {Array.from({ length: item.rating }).map((_, i) => (
-                            <Star key={i} className="w-4 h-4 fill-amber-400" />
+                            <Star key={i} className="w-4 h-4 fill-[#b86835]" />
                           ))}
                         </div>
-                        <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-emerald-100 text-emerald-900 border border-emerald-200">
+                        <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-lg bg-[#f9ede2] text-[#9c5225] border border-[#ebdccb]">
                           {item.specialtyTag}
                         </span>
                       </div>
 
                       {/* Comment */}
-                      <p className="text-sm sm:text-base text-slate-700 leading-relaxed italic">
+                      <p className="text-sm sm:text-base text-[#523c30] leading-relaxed italic">
                         "{item.comment}"
                       </p>
                     </div>
 
-                    <div className="pt-6 mt-6 border-t border-slate-200/80 space-y-1">
-                      <div className="font-bold text-sm sm:text-base text-navy-950">
+                    <div className="pt-6 mt-6 border-t border-[#ebdccb]/60 space-y-1">
+                      <div className="font-bold text-sm sm:text-base text-[#2b1810]">
                         {item.author}
                       </div>
-                      <div className="text-xs font-semibold text-emerald-700">
+                      <div className="text-xs font-semibold text-[#9c5225]">
                         {item.city}
                       </div>
-                      <div className="text-[11px] text-slate-500 font-medium pt-0.5">
+                      <div className="text-[11px] text-[#8c7262] font-medium pt-0.5">
                         {item.treatmentHighlight}
                       </div>
                     </div>
@@ -154,8 +154,8 @@ export const TestimonialsSection: React.FC = () => {
                 onClick={() => setCarouselIndex(index)}
                 className={`h-2.5 rounded-full transition-all ${
                   carouselIndex === index
-                    ? 'w-8 bg-emerald-600'
-                    : 'w-2.5 bg-slate-300 hover:bg-slate-400'
+                    ? 'w-8 bg-[#b86835]'
+                    : 'w-2.5 bg-[#ebdccb] hover:bg-[#dfcaa9]'
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />
@@ -164,14 +164,14 @@ export const TestimonialsSection: React.FC = () => {
         </div>
 
         {/* Ethical Medical Note */}
-        <div className="mt-10 rounded-2xl bg-emerald-50/60 border border-emerald-200 p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-700">
+        <div className="mt-10 rounded-3xl bg-[#f5eee3] border border-[#ebdccb] p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#523c30]">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+            <ShieldCheck className="w-4 h-4 text-[#b86835] shrink-0" />
             <p className="leading-relaxed">
-              <strong className="font-bold text-navy-950">Transparência e Ética Médica:</strong> Relatos voluntários de pacientes atendidos. Cada organismo responde de forma individual ao tratamento.
+              <strong className="font-bold text-[#2b1810]">Transparência e Ética Médica:</strong> Relatos voluntários de pacientes atendidos. Cada organismo responde de forma individual ao tratamento.
             </p>
           </div>
-          <span className="shrink-0 font-bold text-emerald-900 bg-white px-3 py-1 rounded-lg border border-emerald-300 shadow-sm">
+          <span className="shrink-0 font-bold text-[#2b1810] bg-white px-3 py-1 rounded-xl border border-[#ebdccb] shadow-2xs">
             {CLINIC_INFO.fullCredentials}
           </span>
         </div>

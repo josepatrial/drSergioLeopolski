@@ -14,34 +14,34 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
   }, []);
 
   return (
-    <main className="pt-36 pb-24 bg-sand-50 min-h-screen">
+    <main className="pt-36 pb-24 bg-[#fbf8f3] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-petrol-700 hover:text-navy-950 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#9c5225] hover:text-[#2b1810] mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Voltar para a página inicial</span>
         </Link>
 
-        <div className="bg-white rounded-2xl p-8 sm:p-12 border border-navy-900/10 shadow-card space-y-8">
-          <div className="space-y-3 border-b border-navy-900/10 pb-6">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-petrol-700">
-              <Lock className="w-4 h-4" />
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-[#ebdccb] shadow-sm space-y-8">
+          <div className="space-y-3 border-b border-[#ebdccb] pb-6">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#9c5225]">
+              <Lock className="w-4 h-4 text-[#b86835]" />
               <span>Conformidade LGPD — Lei nº 13.709/2018</span>
             </div>
-            <h1 className="font-editorial text-3xl sm:text-5xl font-bold text-navy-950">
+            <h1 className="font-editorial text-3xl sm:text-5xl font-bold text-[#2b1810]">
               Política de Privacidade e Tratamento de Dados
             </h1>
-            <p className="text-sm text-navy-600">
+            <p className="text-sm text-[#8c7262]">
               {CLINIC_INFO.clinicName} • Responsável Técnico: {profile.doctorName} ({CLINIC_INFO.crmState} |{' '}
               {CLINIC_INFO.rqeFormatted})
             </p>
           </div>
 
-          <div className="space-y-6 text-navy-700 text-sm sm:text-base leading-relaxed">
+          <div className="space-y-6 text-[#523c30] text-sm sm:text-base leading-relaxed">
             <section className="space-y-2">
-              <h2 className="font-editorial text-2xl font-bold text-navy-950">
+              <h2 className="font-editorial text-2xl font-bold text-[#2b1810]">
                 1. Compromisso com a Privacidade
               </h2>
               <p>
@@ -53,7 +53,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
             </section>
 
             <section className="space-y-2">
-              <h2 className="font-editorial text-2xl font-bold text-navy-950">
+              <h2 className="font-editorial text-2xl font-bold text-[#2b1810]">
                 2. Coleta e Finalidade dos Dados
               </h2>
               <p>
@@ -69,7 +69,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
             </section>
 
             <section className="space-y-2">
-              <h2 className="font-editorial text-2xl font-bold text-navy-950">
+              <h2 className="font-editorial text-2xl font-bold text-[#2b1810]">
                 3. Cookies e Métricas de Navegação
               </h2>
               <p>
@@ -81,7 +81,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
             </section>
 
             <section className="space-y-2">
-              <h2 className="font-editorial text-2xl font-bold text-navy-950">
+              <h2 className="font-editorial text-2xl font-bold text-[#2b1810]">
                 4. Direitos do Titular dos Dados (LGPD)
               </h2>
               <p>
@@ -93,7 +93,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
             </section>
 
             <section className="space-y-2">
-              <h2 className="font-editorial text-2xl font-bold text-navy-950">
+              <h2 className="font-editorial text-2xl font-bold text-[#2b1810]">
                 5. Canais de Contato
               </h2>
               <p>
@@ -108,8 +108,8 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
             </section>
           </div>
 
-          <div className="pt-6 border-t border-navy-900/10 flex items-center gap-2 text-xs text-navy-600">
-            <ShieldCheck className="w-4 h-4 text-petrol-600" />
+          <div className="pt-6 border-t border-[#ebdccb] flex items-center gap-2 text-xs text-[#8c7262]">
+            <ShieldCheck className="w-4 h-4 text-[#b86835]" />
             <span>Documento em conformidade com a LGPD e diretrizes éticas do CFM.</span>
           </div>
         </div>
@@ -117,4 +117,3 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ profile })
     </main>
   );
 };
-

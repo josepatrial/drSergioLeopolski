@@ -84,23 +84,23 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
         {/* Top Professional Bar */}
-        <div className="bg-navy-950 text-slate-200 text-[11px] sm:text-xs border-b border-white/10">
+        <div className="bg-[#2b1810] text-[#edd8c3] text-[11px] sm:text-xs border-b border-[#412716]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-8 sm:h-9 flex items-center justify-between">
             {/* Left: Professional Credentials & Clinic */}
             <div className="flex items-center gap-3 sm:gap-5 truncate">
-              <span className="font-semibold tracking-wide text-emerald-400 flex items-center gap-1.5 shrink-0">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="font-semibold tracking-wide text-[#f3d7c3] flex items-center gap-1.5 shrink-0">
+                <span className="w-2 h-2 rounded-full bg-[#c5743f] animate-pulse"></span>
                 CRM-PR 18945 • TEOT 9708 • RQE 14512 e 37663
               </span>
-              <span className="hidden md:inline-flex items-center gap-1 text-slate-300">
-                <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <span className="hidden md:inline-flex items-center gap-1 text-[#d8bfa6]">
+                <MapPin className="w-3.5 h-3.5 text-[#c5743f] shrink-0" />
                 {CLINIC_INFO.clinicName} — {CLINIC_INFO.cityState}
               </span>
               <a
                 href={CLINIC_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden xl:inline-flex items-center gap-1 text-slate-300 hover:text-white transition-colors"
+                className="hidden xl:inline-flex items-center gap-1 text-[#d8bfa6] hover:text-[#fdfcf9] transition-colors"
               >
                 <span>{CLINIC_INFO.instagram}</span>
               </a>
@@ -108,16 +108,16 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
 
             {/* Right: Phone & Hours */}
             <div className="flex items-center gap-4 shrink-0">
-              <span className="hidden lg:inline-flex items-center gap-1.5 text-slate-300">
-                <Clock className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="hidden lg:inline-flex items-center gap-1.5 text-[#d8bfa6]">
+                <Clock className="w-3.5 h-3.5 text-[#c5743f]" />
                 Seg a Sex: 09h às 18h30
               </span>
 
               <a
                 href={CLINIC_INFO.phoneHref}
-                className="hidden sm:inline-flex items-center gap-1.5 text-slate-200 hover:text-white transition-colors font-medium"
+                className="hidden sm:inline-flex items-center gap-1.5 text-[#f3d7c3] hover:text-white transition-colors font-medium"
               >
-                <Phone className="w-3.5 h-3.5 text-emerald-400" />
+                <Phone className="w-3.5 h-3.5 text-[#c5743f]" />
                 <span>{CLINIC_INFO.phoneDisplay}</span>
               </a>
             </div>
@@ -129,8 +129,8 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
           aria-label="Navegação Principal"
           className={`transition-all duration-300 ${
             isScrolled
-              ? 'bg-white/98 backdrop-blur-md shadow-premium border-b border-navy-900/10'
-              : 'bg-white/95 backdrop-blur-sm border-b border-navy-900/5'
+              ? 'bg-[#fffcf8]/98 backdrop-blur-md shadow-premium border-b border-[#ebdccb]'
+              : 'bg-[#fffcf8]/95 backdrop-blur-sm border-b border-[#ebdccb]/60'
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-4">
@@ -145,18 +145,18 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 alt="Símbolo oficial Dr. Sergio Leopolski"
                 className="h-10 sm:h-11 w-auto object-contain rounded-md shadow-sm group-hover:scale-105 transition-transform shrink-0"
               />
-              <span className="font-editorial text-xl sm:text-2xl font-bold tracking-tight text-navy-950 leading-none whitespace-nowrap">
+              <span className="font-editorial text-2xl sm:text-[1.7rem] font-bold tracking-tight text-[#2b1810] leading-none whitespace-nowrap">
                 {profile.doctorName}
               </span>
             </Link>
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center shrink-0">
-              <div className="flex items-center gap-5 xl:gap-8 text-[13.5px] xl:text-[15px] font-semibold text-navy-800">
+              <div className="flex items-center gap-6 xl:gap-9 text-[13.5px] xl:text-[14.5px] font-semibold text-[#382216]">
                 <button
                   type="button"
                   onClick={() => scrollToSection('inicio')}
-                  className="hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
+                  className="relative text-[#2b1810] hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap after:content-[''] after:absolute after:bottom-0 after:left-1 after:right-1 after:h-[2px] after:bg-[#b86835] after:rounded-full"
                 >
                   Início
                 </button>
@@ -170,41 +170,41 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                   <button
                     type="button"
                     onClick={() => scrollToSection('especialidades')}
-                    className="inline-flex items-center gap-1 hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
+                    className="inline-flex items-center gap-1 hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap"
                     aria-expanded={specialtiesDropdownOpen}
                   >
                     <span>Especialidades & Condições</span>
                     <ChevronDown
                       className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                        specialtiesDropdownOpen ? 'rotate-180 text-emerald-600' : 'text-navy-400'
+                        specialtiesDropdownOpen ? 'rotate-180 text-[#b86835]' : 'text-[#8c7262]'
                       }`}
                     />
                   </button>
 
                   {specialtiesDropdownOpen && (
                     <div className="absolute top-full left-0 pt-2 w-80 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                      <div className="bg-white rounded-2xl shadow-xl border border-navy-900/10 p-2 space-y-1">
-                        <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-100 flex items-center justify-between">
+                      <div className="bg-[#fffdfa] rounded-2xl shadow-xl border border-[#ebdccb] p-2 space-y-1">
+                        <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-[#8c7262] border-b border-[#ebdccb] flex items-center justify-between">
                           <span>Áreas de Atuação</span>
-                          <span className="text-emerald-700 font-semibold text-[10px]">3 Especialidades</span>
+                          <span className="text-[#b86835] font-semibold text-[10px]">3 Especialidades</span>
                         </div>
                         {SPECIALTIES_DATA.map((spec) => (
                           <Link
                             key={spec.id}
                             to={`/especialidades/${spec.slug}`}
-                            className="flex items-start gap-3 p-3 rounded-xl hover:bg-emerald-50/70 transition-all group/item"
+                            className="flex items-start gap-3 p-3 rounded-xl hover:bg-[#f9ede2] transition-all group/item"
                           >
-                            <div className="w-8 h-8 rounded-lg bg-emerald-100/70 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-emerald-600 group-hover/item:text-white transition-colors">
+                            <div className="w-8 h-8 rounded-lg bg-[#f3d7c3] text-[#9a4f27] flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-[#b86835] group-hover/item:text-white transition-colors">
                               {getSpecialtyIcon(spec.slug)}
                             </div>
                             <div>
-                              <div className="text-xs font-semibold text-emerald-700 uppercase tracking-wider">
+                              <div className="text-xs font-semibold text-[#b86835] uppercase tracking-wider">
                                 Especialidade {spec.number}
                               </div>
-                              <div className="text-sm font-bold text-navy-950 group-hover/item:text-emerald-800">
+                              <div className="text-sm font-bold text-[#2b1810] group-hover/item:text-[#9a4f27]">
                                 {spec.title}
                               </div>
-                              <p className="text-[11px] text-slate-500 line-clamp-1 mt-0.5">
+                              <p className="text-[11px] text-[#7e7266] line-clamp-1 mt-0.5">
                                 {spec.shortDescription}
                               </p>
                             </div>
@@ -218,15 +218,15 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 <button
                   type="button"
                   onClick={() => scrollToSection('tecnologia')}
-                  className="hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
+                  className="hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap"
                 >
-                  Tecnologia & Procedimentos
+                  Tecnologias e Tratamentos
                 </button>
 
                 <button
                   type="button"
                   onClick={() => scrollToSection('diferenciais')}
-                  className="hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
+                  className="hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap"
                 >
                   Diferenciais
                 </button>
@@ -234,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 <button
                   type="button"
                   onClick={() => scrollToSection('localizacao')}
-                  className="hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
+                  className="hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap"
                 >
                   Localização
                 </button>

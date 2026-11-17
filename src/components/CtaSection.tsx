@@ -7,7 +7,7 @@ export const CtaSection: React.FC = () => {
     <section
       id="agendamento"
       aria-labelledby="cta-heading"
-      className="py-20 lg:py-24 bg-gradient-to-br from-navy-950 via-navy-900 to-emerald-950 text-white relative overflow-hidden"
+      className="py-20 lg:py-24 bg-gradient-to-br from-[#2b1810] via-[#1b0e09] to-[#3d2315] text-white relative overflow-hidden"
     >
       {/* Decorative Circles */}
       <div
@@ -16,12 +16,12 @@ export const CtaSection: React.FC = () => {
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-8 -top-8 w-96 h-96 rounded-full border border-emerald-400/20"
+        className="pointer-events-none absolute -right-8 -top-8 w-96 h-96 rounded-full border border-[#b86835]/30"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-900/60 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-widest">
-          <CalendarCheck className="w-4 h-4 text-emerald-400" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#3d2315] border border-[#b86835]/30 text-[#dfcaa9] text-xs font-bold uppercase tracking-widest">
+          <CalendarCheck className="w-4 h-4 text-[#dfcaa9]" />
           <span>Agendamento de Consultas • {CLINIC_INFO.clinicName}</span>
         </div>
 
@@ -32,7 +32,7 @@ export const CtaSection: React.FC = () => {
           >
             Cuide da sua saúde e recupere sua qualidade de vida.
           </h2>
-          <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto font-normal">
+          <p className="text-lg sm:text-xl text-[#edd8c3] max-w-2xl mx-auto font-normal">
             Entre em contato com nossa equipe e agende sua avaliação.
           </p>
         </div>
@@ -42,7 +42,7 @@ export const CtaSection: React.FC = () => {
             href={getWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-base font-bold shadow-emerald-glow hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-[#b86835] hover:bg-[#9a4f27] text-white text-base font-bold shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95"
           >
             <MessageCircle className="w-5 h-5 fill-white" />
             <span>Agendar pelo WhatsApp</span>
@@ -50,16 +50,16 @@ export const CtaSection: React.FC = () => {
 
           <a
             href={CLINIC_INFO.phoneHref}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/20 text-base font-semibold transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-white border border-white/20 text-base font-semibold transition-all active:scale-95"
           >
-            <Phone className="w-4 h-4 text-emerald-400" />
+            <Phone className="w-4 h-4 text-[#dfcaa9]" />
             <span>Ligar para {CLINIC_INFO.phoneDisplay}</span>
           </a>
         </div>
 
-        <div className="pt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-300">
+        <div className="pt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-[#dfcaa9]/90">
           <span className="inline-flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <ShieldCheck className="w-4 h-4 text-[#dfcaa9]" />
             CRM-PR {CLINIC_INFO.crm} | RQE 14512 e 37663
           </span>
           <span>•</span>

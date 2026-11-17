@@ -1,162 +1,162 @@
 import React from 'react';
-import { Waves, Zap, Stethoscope, CheckCircle2, MessageCircle, ArrowRight } from 'lucide-react';
-import { CLINIC_TECHNOLOGY, getWhatsAppUrl, CLINIC_INFO } from '../data/siteConfig';
+import { Syringe, Waves, CircleDot, Droplets, Stethoscope, Calendar, ArrowRight } from 'lucide-react';
+import { getWhatsAppUrl } from '../data/siteConfig';
+
+interface TechItem {
+  id: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+}
+
+const TECH_CARDS: TechItem[] = [
+  {
+    id: 'infiltracoes',
+    icon: <Syringe className="w-5 h-5 text-[#b86835]" />,
+    title: 'Infiltrações e Bloqueios Guiados',
+    description:
+      'Aplicação precisa de medicamentos e terapias em articulações, tendões e nervos, com orientação por ultrassom.',
+    image: '/images/tech-infiltracoes.jpg',
+    imageAlt: 'Infiltração articular e bloqueio guiado por imagem em consultório'
+  },
+  {
+    id: 'sis',
+    icon: <Waves className="w-5 h-5 text-[#b86835]" />,
+    title: 'SIS (Campo Eletromagnético)',
+    description:
+      'Terapia não invasiva que atua na modulação da dor e na recuperação tecidual, indicada em diversas condições musculoesqueléticas.',
+    image: '/images/tech-sis.jpg',
+    imageAlt: 'Paciente em sessão com tecnologia SIS de campo eletromagnético de alta intensidade'
+  },
+  {
+    id: 'ondas-choque',
+    icon: <CircleDot className="w-5 h-5 text-[#b86835]" />,
+    title: 'Ondas de Choque (TOC Radial)',
+    description:
+      'Estímulo mecânico que favorece a resposta biológica de reparo em tendinopatias, entesopatias e outras lesões crônicas.',
+    image: '/images/tech-ondas-choque.jpg',
+    imageAlt: 'Aplicação de Ondas de Choque Radiais em região tendínea'
+  },
+  {
+    id: 'regenerativa',
+    icon: <Droplets className="w-5 h-5 text-[#b86835]" />,
+    title: 'Terapias Regenerativas',
+    description:
+      'Aplicações como PRP, BMA/BMAC, microfat e ácido hialurônico, conforme indicação clínica, com foco na recuperação tecidual e na função.',
+    image: '/images/tech-regenerativa.jpg',
+    imageAlt: 'Preparo e aplicação de terapias biológicas e regenerativas'
+  }
+];
 
 export const TechnologySection: React.FC = () => {
-  const getTechIcon = (id: string) => {
-    switch (id) {
-      case 'ultrassom':
-        return <Stethoscope className="w-6 h-6 text-emerald-600" />;
-      case 'ondas-choque':
-        return <Waves className="w-6 h-6 text-emerald-600" />;
-      case 'btl-sis':
-        return <Zap className="w-6 h-6 text-emerald-600" />;
-      default:
-        return <CheckCircle2 className="w-6 h-6 text-emerald-600" />;
-    }
-  };
-
   return (
     <section
       id="tecnologia"
-      aria-label="Procedimentos e Recursos Tecnológicos"
-      className="py-16 lg:py-24 bg-gradient-to-b from-slate-100/80 via-white to-slate-50 border-t border-slate-200"
+      aria-label="Tecnologias e Tratamentos"
+      className="py-16 sm:py-20 lg:py-24 bg-[#fbf8f3] bg-silk-waves relative overflow-hidden border-t border-[#ebdccb]"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Procedimentos Guiados & Equipamento Real (Ultra Clean & High Impact) */}
-        <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-10 border-2 border-emerald-500/30 shadow-card hover:shadow-premium transition-all mb-10">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-200">
-            <div className="flex items-center gap-4">
-              <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-emerald-50 border-2 border-emerald-500/40 flex items-center justify-center shrink-0 shadow-sm">
-                <Stethoscope className="w-7 h-7 text-emerald-600" />
-              </div>
-              <div>
-                <span className="inline-block text-[11px] font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-100/80 px-2.5 py-0.5 rounded-md mb-1">
-                  Diferencial no Consultório
-                </span>
-                <h3 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-950 leading-tight">
-                  Procedimentos Guiados por Ultrassom
-                </h3>
-              </div>
-            </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+        {/* Top Header: Exact Layout from Mockup 2 */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-7 space-y-4">
+            <span className="inline-block text-[11px] font-extrabold uppercase tracking-widest text-[#9c5225] bg-[#f9ede2] px-3 py-1 rounded-full border border-[#ebdccb]">
+              Tecnologias e Tratamentos
+            </span>
 
-            <a
-              href={getWhatsAppUrl(
-                'Olá! Gostaria de informações sobre os procedimentos com ultrassom e tecnologias avançadas do Dr. Sergio Leopolski.'
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold shadow-emerald-glow transition-all shrink-0 active:scale-95"
-            >
-              <MessageCircle className="w-4 h-4 fill-white" />
-              <span>Consultar indicações no WhatsApp</span>
-            </a>
+            <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2b1810] leading-[1.18] tracking-tight">
+              Recursos modernos,{' '}
+              <span className="font-serif italic font-normal text-[#b86835] block sm:inline">
+                com indicação individualizada.
+              </span>
+            </h2>
+
+            <p className="text-base sm:text-lg text-[#523c30] leading-relaxed max-w-2xl font-normal">
+              Tecnologias e procedimentos complementares que auxiliam no alívio da dor, na recuperação da função e na saúde musculoesquelética, sempre com avaliação personalizada.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-center">
-            {/* Left: Explanatory & Benefits */}
-            <div className="lg:col-span-7 space-y-5">
-              <p className="text-base sm:text-lg text-slate-700 font-medium leading-relaxed">
-                Infiltrações articulares e bloqueios de nervos periféricos são realizados no próprio consultório quando
-                indicados. O ultrassom permite ao Dr. Sergio Leopolski visualizar detalhadamente a anatomia e acompanhar a
-                posição da agulha em tempo real com conforto e segurança.
-              </p>
-
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Em conjunto com a tecnologia médica <strong className="text-navy-950 font-semibold">SIS Elite</strong> e as <strong className="text-navy-950 font-semibold">Ondas de Choque Radiais</strong>, o consultório oferece um ecossistema completo para alívio da dor aguda ou crônica e estímulo biológico à regeneração tecidual sem cortes.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
-                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-left">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Conforto</div>
-                  <div className="text-xs font-bold text-navy-950 mt-0.5">Sem necessidade de internação</div>
-                </div>
-                <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-left">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Precisão</div>
-                  <div className="text-xs font-bold text-navy-950 mt-0.5">Visualização em tempo real</div>
-                </div>
-                <div className="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200 text-left">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-800">Resultado</div>
-                  <div className="text-xs font-bold text-emerald-950 mt-0.5">Máximo alívio terapêutico</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: Actual Photo Demonstrating Equipment in Action */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-500/30 shadow-xl bg-slate-100 max-w-sm sm:max-w-md mx-auto group">
-                <img
-                  src="/images/medico-btl-procedimento.jpg"
-                  alt="Dr. Sergio Leopolski aplicando o Sistema Super Indutivo SIS Elite em paciente no consultório"
-                  className="w-full h-auto object-cover object-top group-hover:scale-102 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 z-10">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-950/85 backdrop-blur-md text-emerald-300 text-xs font-bold border border-white/20 shadow-md">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Aplicação no Consultório
-                  </span>
-                </div>
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-navy-950/95 via-navy-950/60 to-transparent text-white">
-                  <p className="text-sm font-bold text-white">
-                    Dr. Sergio Leopolski aplicando o Sistema SIS Elite
-                  </p>
-                  <p className="text-xs text-emerald-300 font-medium mt-0.5">
-                    Estimulação Eletromagnética de Alta Intensidade para alívio da dor
-                  </p>
-                </div>
-              </div>
+          <div className="lg:col-span-5">
+            <div className="relative rounded-3xl overflow-hidden border border-[#ebdccb] shadow-xl bg-white aspect-[16/10] sm:aspect-[16/9] group">
+              <img
+                src="/images/tech-ultrassom-consultorio.jpg"
+                alt="Dr. Sergio Leopolski com paciente e equipamento de ultrassom moderno"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
 
-        {/* 3 Tech Cards Grid: Ultra-Clear, Crisp White Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {CLINIC_TECHNOLOGY.map((tech) => (
-            <div
-              key={tech.id}
-              className="group bg-white rounded-2xl p-6 sm:p-8 border-2 border-slate-200 hover:border-emerald-500 shadow-card hover:shadow-premium-hover transition-all duration-300 flex flex-col justify-between"
+        {/* 4 Cards Grid: Exact Layout and Styling from Mockup 2 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+          {TECH_CARDS.map((card) => (
+            <article
+              key={card.id}
+              className="group bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 border border-[#ebdccb] shadow-sm hover:shadow-xl hover:border-[#b86835]/40 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="space-y-4">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="w-13 h-13 p-3 rounded-2xl bg-emerald-50 border border-emerald-200 group-hover:bg-emerald-600 text-emerald-700 group-hover:text-white transition-colors shrink-0 shadow-sm">
-                    {getTechIcon(tech.id)}
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-2xl bg-[#f9ede2] border border-[#ebdccb] flex items-center justify-center shrink-0 group-hover:bg-[#b86835] group-hover:text-white transition-colors duration-300">
+                    {card.icon}
                   </div>
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300">
-                    {tech.badge}
-                  </span>
+                  <h3 className="font-editorial text-lg sm:text-[1.18rem] font-bold text-[#2b1810] leading-snug group-hover:text-[#9c5225] transition-colors">
+                    {card.title}
+                  </h3>
                 </div>
 
-                <h4 className="font-editorial text-2xl sm:text-[1.65rem] font-bold text-navy-950 group-hover:text-emerald-800 transition-colors leading-snug">
-                  {tech.title}
-                </h4>
-
-                <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
-                  {tech.description}
+                <p className="text-xs sm:text-sm text-[#523c30] leading-relaxed font-normal min-h-[60px]">
+                  {card.description}
                 </p>
-
-                <div className="pt-4 border-t border-slate-100 space-y-2.5">
-                  <div className="text-xs font-extrabold uppercase tracking-wider text-emerald-800">
-                    Benefícios Clínicos:
-                  </div>
-                  <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
-                    {tech.features.map((feat) => (
-                      <li key={feat} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                        <span className="font-medium">{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
-                <span>Disponível no consultório</span>
-                <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">
-                  Clínica Dr. Bardal
-                </span>
+              {/* Bottom Thumbnail Image */}
+              <div className="mt-5 rounded-2xl overflow-hidden border border-[#ebdccb]/70 bg-[#f5eee3] aspect-[2.2/1] relative">
+                <img
+                  src={card.image}
+                  alt={card.imageAlt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
               </div>
-            </div>
+            </article>
           ))}
+        </div>
+
+        {/* Bottom Banner: Dark Espresso bar from Mockup 2 */}
+        <div className="bg-[#2b1810] rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-7 border border-[#3e2317] shadow-xl text-white">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            {/* Left Title */}
+            <div className="flex items-center gap-3 shrink-0">
+              <div className="w-11 h-11 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-[#edd8c3] shrink-0">
+                <Stethoscope className="w-5 h-5 text-[#dfcaa9]" />
+              </div>
+              <span className="font-editorial italic font-normal text-xl sm:text-2xl text-[#f3e6d8]">
+                Tratamento individualizado
+              </span>
+            </div>
+
+            {/* Middle Explanation */}
+            <div className="hidden lg:block w-px h-10 bg-white/15 shrink-0" />
+            <p className="text-xs sm:text-sm text-[#ecd8c7] leading-relaxed flex-1 max-w-2xl font-normal">
+              A combinação de técnicas é definida após avaliação clínica e de imagem, considerando sua condição, objetivos e rotina de atividades.
+            </p>
+
+            {/* Right Button */}
+            <a
+              href={getWhatsAppUrl(
+                'Olá Dr. Sergio! Gostaria de agendar uma avaliação para conhecer os tratamentos e tecnologias disponíveis.'
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-[#f3e6d8] hover:bg-white text-[#2b1810] font-bold text-xs sm:text-sm shadow-md transition-all duration-300 shrink-0 group active:scale-95"
+            >
+              <Calendar className="w-4 h-4 text-[#9c5225]" />
+              <span>Agendar avaliação</span>
+              <ArrowRight className="w-4 h-4 text-[#9c5225] group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
