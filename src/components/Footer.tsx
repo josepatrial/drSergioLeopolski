@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
                   onClick={() => scrollToSection('tecnologia')}
                   className="text-slate-300 hover:text-emerald-300 transition-colors"
                 >
-                  Tecnologia & BTL
+                  Tecnologia & Procedimentos
                 </button>
               </li>
               <li>

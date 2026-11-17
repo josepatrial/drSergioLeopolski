@@ -22,7 +22,7 @@ export const HomePage: React.FC<HomePageProps> = ({ profile }) => {
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Dr. Sergio Leopolski — Especialista em Ortopedia, Cirurgia da Mão e Medicina Esportiva e Regenerativa em Santo Antônio da Platina – PR (CRM-PR 18945 | RQE 14512 e 37663 | TEOT 9708). Procedimentos guiados por ultrassom e tecnologia BTL na Clínica Dr. Bardal.'
+        'Dr. Sergio Leopolski — Especialista em Ortopedia, Cirurgia da Mão e Medicina Esportiva e Regenerativa em Santo Antônio da Platina – PR (CRM-PR 18945 | RQE 14512 e 37663 | TEOT 9708). Procedimentos guiados por ultrassom e tecnologias avançadas na Clínica Dr. Bardal.'
       );
     }
   }, []);

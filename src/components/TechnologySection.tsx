@@ -35,14 +35,14 @@ export const TechnologySection: React.FC = () => {
                   Diferencial no Consultório
                 </span>
                 <h3 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-950 leading-tight">
-                  Procedimentos Guiados por Ultrassom & BTL
+                  Procedimentos Guiados por Ultrassom
                 </h3>
               </div>
             </div>
 
             <a
               href={getWhatsAppUrl(
-                'Olá! Gostaria de informações sobre os procedimentos com ultrassom e tecnologias BTL do Dr. Sergio Leopolski.'
+                'Olá! Gostaria de informações sobre os procedimentos com ultrassom e tecnologias avançadas do Dr. Sergio Leopolski.'
               )}
               target="_blank"
               rel="noopener noreferrer"
@@ -63,7 +63,7 @@ export const TechnologySection: React.FC = () => {
               </p>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Em conjunto com a tecnologia médica <strong className="text-navy-950 font-semibold">BTL SIS Elite</strong> e as <strong className="text-navy-950 font-semibold">Ondas de Choque Radiais</strong>, o consultório oferece um ecossistema completo para alívio da dor aguda ou crônica e estímulo biológico à regeneração tecidual sem cortes.
+                Em conjunto com a tecnologia médica <strong className="text-navy-950 font-semibold">SIS Elite</strong> e as <strong className="text-navy-950 font-semibold">Ondas de Choque Radiais</strong>, o consultório oferece um ecossistema completo para alívio da dor aguda ou crônica e estímulo biológico à regeneração tecidual sem cortes.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
@@ -87,7 +87,7 @@ export const TechnologySection: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border-2 border-emerald-500/30 shadow-xl bg-slate-100 max-w-sm sm:max-w-md mx-auto group">
                 <img
                   src="/images/medico-btl-procedimento.jpg"
-                  alt="Dr. Sergio Leopolski aplicando o Sistema BTL SIS Elite em paciente no consultório"
+                  alt="Dr. Sergio Leopolski aplicando o Sistema Super Indutivo SIS Elite em paciente no consultório"
                   className="w-full h-auto object-cover object-top group-hover:scale-102 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 z-10">
@@ -98,7 +98,7 @@ export const TechnologySection: React.FC = () => {
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-navy-950/95 via-navy-950/60 to-transparent text-white">
                   <p className="text-sm font-bold text-white">
-                    Dr. Sergio Leopolski aplicando o Sistema BTL SIS Elite
+                    Dr. Sergio Leopolski aplicando o Sistema SIS Elite
                   </p>
                   <p className="text-xs text-emerald-300 font-medium mt-0.5">
                     Estimulação Eletromagnética de Alta Intensidade para alívio da dor

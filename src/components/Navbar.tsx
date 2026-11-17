@@ -220,7 +220,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                   onClick={() => scrollToSection('tecnologia')}
                   className="hover:text-emerald-600 transition-colors py-2 px-1 whitespace-nowrap"
                 >
-                  Tecnologia & BTL
+                  Tecnologia & Procedimentos
                 </button>
 
                 <button
@@ -335,7 +335,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 onClick={() => scrollToSection('tecnologia')}
                 className="w-full flex items-center justify-between p-3 rounded-xl text-left font-bold text-navy-950 hover:bg-slate-100"
               >
-                <span>Tecnologia & BTL</span>
+                <span>Tecnologia & Procedimentos</span>
                 <ArrowRight className="w-4 h-4 text-slate-400" />
               </button>
 

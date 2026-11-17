@@ -234,10 +234,10 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
   },
   {
     id: 'ondas-choque',
-    title: 'Equipamento de Ondas de Choque Radiais da BTL',
+    title: 'Equipamento de Ondas de Choque Radiais',
     badge: 'Terapia Biológica Não Invasiva',
     description:
-      'Tecnologia de ondas de choque de padrão internacional da BTL. Ondas acústicas de alta energia que estimulam a neovascularização, aceleram o processo de cicatrização tecidual e promovem alívio efetivo da dor em quadros musculoesqueléticos crônicos e sobrecargas.',
+      'Tecnologia de ondas de choque de padrão internacional. Ondas acústicas de alta energia que estimulam a neovascularização, aceleram o processo de cicatrização tecidual e promovem alívio efetivo da dor em quadros musculoesqueléticos crônicos e sobrecargas.',
     features: [
       'Tratamento padrão-ouro para esporão de calcâneo e fascite plantar',
       'Eficácia comprovada em tendinopatias crônicas (ombro, cotovelo, joelho)',
@@ -247,10 +247,10 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
   },
   {
     id: 'btl-sis',
-    title: 'Sistema BTL SIS Elite — Estimulação Eletromagnética de Alta Intensidade',
+    title: 'Sistema SIS Elite — Estimulação Eletromagnética de Alta Intensidade',
     badge: 'Super Inductive System (SIS)',
     description:
-      'O Sistema Super Indutivo (SIS Elite) da BTL utiliza campo eletromagnético focado de alta intensidade capaz de atuar em tecidos profundos. Promove alívio analgésico potente, modulação neuromuscular, relaxamento de contraturas, auxílio na consolidação óssea e reabilitação funcional acelerada.',
+      'O Sistema Super Indutivo (SIS Elite) utiliza campo eletromagnético focado de alta intensidade capaz de atuar em tecidos profundos. Promove alívio analgésico potente, modulação neuromuscular, relaxamento de contraturas, auxílio na consolidação óssea e reabilitação funcional acelerada.',
     features: [
       'Alívio rápido de dores articulares, musculares e neuropáticas',
       'Aceleração da regeneração neuromuscular e cicatrização',
@@ -270,18 +270,18 @@ export const SPECIALTIES_DATA: SpecialtyItem[] = [
       'Avaliação e tratamento de lesões musculoesqueléticas relacionadas ao esporte e à atividade física, com orientação para o retorno seguro à prática.',
     seoTitle: 'Medicina Esportiva e Regenerativa em Santo Antônio da Platina – PR | Dr. Sergio Leopolski',
     seoDescription:
-      'Especialista em Lesões Esportivas e Medicina Regenerativa em Santo Antônio da Platina – PR. Dr. Sergio Leopolski (CRM-PR 18945 | TEOT 9708). Avaliação biomecânica, procedimentos guiados por ultrassom e tecnologia BTL.',
+      'Especialista em Lesões Esportivas e Medicina Regenerativa em Santo Antônio da Platina – PR. Dr. Sergio Leopolski (CRM-PR 18945 | TEOT 9708). Avaliação biomecânica, procedimentos guiados por ultrassom e tecnologias avançadas.',
     heroSubtitle:
       'Avaliação médica criteriosa de atletas amadores e praticantes de esportes para retorno seguro aos treinos com preservação biomecânica e longevidade muscular.',
     overviewParagraphs: [
       'A atuação em Lesões Esportivas e Medicina Regenerativa atende tanto desportistas competitivos quanto praticantes recreativos de corrida, ciclismo, musculação e esportes de quadra em Santo Antônio da Platina e região.',
-      'O Dr. Sergio Leopolski alia sua sólida formação em Ortopedia, pós-graduação pelo Instituto Vita / Cruzeiro do Sul e especialização em Medicina Regenerativa no CETRUS-SP com tecnologia avançada no consultório (ultrassom musculoesquelético, ondas de choque BTL e estimulação eletromagnética BTL SIS Elite), definindo planos terapêuticos personalizados para alívio da dor e regeneração tecidual.'
+      'O Dr. Sergio Leopolski alia sua sólida formação em Ortopedia, pós-graduação pelo Instituto Vita / Cruzeiro do Sul e especialização em Medicina Regenerativa no CETRUS-SP com tecnologia avançada no consultório (ultrassom musculoesquelético, ondas de choque e estimulação eletromagnética SIS Elite), definindo planos terapêuticos personalizados para alívio da dor e regeneração tecidual.'
     ],
     clinicalFocusAreas: [
       'Diagnóstico e reabilitação de entorses, estiramentos e roturas musculares',
       'Tendinopatias e sobrecargas no joelho, ombro, tornozelo e tendão de Aquiles',
       'Procedimentos guiados por ultrassom para reparo tecidual e alívio da dor',
-      'Tratamento por Ondas de Choque Radiais BTL e Sistema BTL SIS Elite',
+      'Tratamento por Ondas de Choque Radiais e Sistema SIS Elite',
       'Planejamento estruturado para Return to Play (retorno seguro ao esporte)'
     ],
     whenToSeekCare: [
@@ -391,7 +391,7 @@ export const CONDITIONS_DATA: ConditionItem[] = [
     category: 'Medicina Esportiva',
     description:
       'Avaliação de entorses, distensões, contraturas e lesões causadas por práticas esportivas ou atividade física, com plano para retorno seguro.',
-    informativeNote: 'Abordagem combinada com ondas de choque BTL e sistema SIS Elite.'
+    informativeNote: 'Abordagem combinada com ondas de choque e sistema SIS Elite.'
   },
   {
     id: 'dores-joelho-quadril',
@@ -439,7 +439,7 @@ export const CONDITIONS_DATA: ConditionItem[] = [
     category: 'Medicina Regenerativa',
     description:
       'Tratamento de dores crônicas na sola do pé (esporão de calcâneo), tendinite patelar e tendão de Aquiles.',
-    informativeNote: 'Excelente resposta com terapia por ondas de choque radiais BTL.'
+    informativeNote: 'Excelente resposta com terapia por ondas de choque radiais.'
   },
   {
     id: 'limitacoes-movimento',
@@ -474,9 +474,9 @@ export const DIFFERENTIALS_DATA: DifferentialItem[] = [
       'Infiltrações e bloqueios realizados com precisão milimétrica no próprio consultório, visualizando agulha e estruturas em tempo real.'
   },
   {
-    id: 'tecnologia-btl',
+    id: 'tecnologia-avancada',
     number: '04',
-    title: 'Tecnologias BTL no consultório',
+    title: 'Tecnologias Avançadas no consultório',
     description:
       'Disponibilidade de Ondas de Choque Radiais e Sistema Super Indutivo SIS Elite para alívio da dor e estímulo regenerativo tecidual.'
   },
@@ -508,8 +508,8 @@ export const EDUCATIONAL_TOPICS: EducationalTopic[] = [
   },
   {
     id: 'edu-2',
-    category: 'Medicina Esportiva & BTL',
-    title: 'Terapia por Ondas de Choque e BTL SIS Elite: como a tecnologia acelera a recuperação?',
+    category: 'Medicina Esportiva & Regenerativa',
+    title: 'Terapia por Ondas de Choque e SIS Elite: como a tecnologia acelera a recuperação?',
     summary:
       'Entenda como os recursos de ondas acústicas e estimulação eletromagnética de alta intensidade atuam na dor crônica e cicatrização tecidual.',
     readingTime: 'Leitura informativa • 4 min',
@@ -541,7 +541,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     id: 'test-2',
     author: 'Mariana F. Ribeiro',
     city: 'Santo Antônio da Platina – PR',
-    specialtyTag: 'Medicina Esportiva & BTL',
+    specialtyTag: 'Medicina Esportiva & Regenerativa',
     rating: 5,
     comment:
       'Tive uma lesão no joelho correndo e o Dr. Sergio conduziu meu tratamento com ondas de choque e adaptação de treino. Voltei a correr com segurança e sem desconforto. Recomendo de olhos fechados!',
@@ -555,7 +555,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     rating: 5,
     comment:
       'Consultório pontual, com estrutura tecnológica impressionante e atendimento muito humano. O Dr. Sergio explica com clareza o diagnóstico e não tem pressa na consulta. Excelente médico!',
-    treatmentHighlight: 'Diagnóstico Preciso e Tecnologia BTL'
+    treatmentHighlight: 'Diagnóstico Preciso e Tecnologias Avançadas'
   },
   {
     id: 'test-4',

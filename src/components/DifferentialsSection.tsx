@@ -64,9 +64,9 @@ const PILLARS_LIST: PillarItem[] = [
     number: '04',
     badge: 'Tecnologia Internacional',
     metric: 'SIS Elite & Ondas de Choque',
-    title: 'Equipamentos BTL de padrão mundial à sua disposição',
+    title: 'Equipamentos de padrão mundial à sua disposição',
     description:
-      'Consultório equipado com Ondas de Choque Radiais e o Sistema BTL SIS Elite (Estimulação Eletromagnética de Alta Intensidade), padrão ouro em bioestimulação tecidual e alívio da dor articular crônica.',
+      'Consultório equipado com Ondas de Choque Radiais e o Sistema SIS Elite (Estimulação Eletromagnética de Alta Intensidade), padrão ouro em bioestimulação tecidual e alívio da dor articular crônica.',
     highlight: 'Estímulo biológico regenerativo e reabilitação tecidual',
     icon: <Cpu className="w-5 h-5 text-emerald-400" />
   },
