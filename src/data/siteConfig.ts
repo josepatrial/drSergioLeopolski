@@ -287,49 +287,9 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
 
 export const SPECIALTIES_DATA: SpecialtyItem[] = [
   {
-    id: 'lesoes-esportivas',
-    slug: 'medicina-esportiva-e-regenerativa',
-    number: '01',
-    title: 'Medicina Esportiva e Regenerativa',
-    shortDescription:
-      'Avaliação e tratamento de lesões musculoesqueléticas relacionadas ao esporte e à atividade física, com orientação para o retorno seguro à prática.',
-    seoTitle: 'Medicina Esportiva e Regenerativa em Santo Antônio da Platina – PR | Dr. Sergio Leopolski',
-    seoDescription:
-      'Especialista em Lesões Esportivas e Medicina Regenerativa em Santo Antônio da Platina – PR. Dr. Sergio Leopolski (CRM-PR 18945 | TEOT 9708). Avaliação biomecânica, procedimentos guiados por ultrassom e tecnologias avançadas.',
-    heroSubtitle:
-      'Avaliação médica criteriosa de atletas amadores e praticantes de esportes para retorno seguro aos treinos com preservação biomecânica e longevidade muscular.',
-    overviewParagraphs: [
-      'A atuação em Lesões Esportivas e Medicina Regenerativa atende tanto desportistas competitivos quanto praticantes recreativos de corrida, ciclismo, musculação e esportes de quadra em Santo Antônio da Platina e região.',
-      'O Dr. Sergio Leopolski alia sua sólida formação em Ortopedia, pós-graduação pelo Instituto Vita / Cruzeiro do Sul e especialização em Medicina Regenerativa no CETRUS-SP com tecnologia avançada no consultório (ultrassom musculoesquelético, ondas de choque e estimulação eletromagnética SIS Elite), definindo planos terapêuticos personalizados para alívio da dor e regeneração tecidual.'
-    ],
-    clinicalFocusAreas: [
-      'Diagnóstico e reabilitação de entorses, estiramentos e roturas musculares',
-      'Tendinopatias e sobrecargas no joelho, ombro, tornozelo e tendão de Aquiles',
-      'Procedimentos guiados por ultrassom para reparo tecidual e alívio da dor',
-      'Tratamento por Ondas de Choque Radiais e Sistema SIS Elite',
-      'Planejamento estruturado para Return to Play (retorno seguro ao esporte)'
-    ],
-    whenToSeekCare: [
-      'Dor persistente que surge durante ou logo após treinos ou competições',
-      'Lesões musculares recidivantes ou sensação de instabilidade articular',
-      'Fascite plantar, canelite ou tendinite crônica que não respondem ao repouso simples',
-      'Orientação médica especializada antes de intensificar a rotina esportiva'
-    ],
-    diagnosticAndTherapeuticApproach:
-      'Integração entre exame clínico detalhado, ultrassom em tempo real no consultório e tecnologias avançadas de bioestimulação e modulação de carga.',
-    image: '/images/medico-esporte-card.jpg',
-    imageAlt: 'Dr. Sergio Leopolski — Especialista em Medicina Esportiva e Lesões no Esporte',
-    keywords: [
-      'Lesões esportivas em Santo Antônio da Platina',
-      'Médico do esporte Santo Antônio da Platina',
-      'Dr Sergio Leopolski medicina esportiva',
-      'Medicina regenerativa Paraná ortopedia'
-    ]
-  },
-  {
     id: 'ortopedia',
     slug: 'ortopedia',
-    number: '02',
+    number: '01',
     title: 'Ortopedia e Traumatologia',
     shortDescription:
       'Atendimento especializado a dores e lesões do joelho, quadril, coluna, ombro e cotovelo, com mais de 25 anos de dedicação médica.',
@@ -369,7 +329,7 @@ export const SPECIALTIES_DATA: SpecialtyItem[] = [
   {
     id: 'cirurgia-da-mao',
     slug: 'cirurgia-da-mao',
-    number: '03',
+    number: '02',
     title: 'Cirurgia da Mão e do Punho',
     shortDescription:
       'Tratamento especializado de lesões da mão e do punho com abordagem clínica ou cirúrgica, incluindo cirurgias por vídeo (artroscopia e procedimentos minimamente invasivos) para recuperação rápida e funcional.',
@@ -406,6 +366,46 @@ export const SPECIALTIES_DATA: SpecialtyItem[] = [
       'Cirurgião da mão em Santo Antônio da Platina',
       'Dr Sergio Leopolski cirurgia da mão',
       'Tratamento de lesões na mão clínica ou cirúrgica'
+    ]
+  },
+  {
+    id: 'lesoes-esportivas',
+    slug: 'medicina-esportiva-e-regenerativa',
+    number: '03',
+    title: 'Medicina Esportiva e Regenerativa',
+    shortDescription:
+      'Avaliação e tratamento de lesões musculoesqueléticas relacionadas ao esporte e à atividade física, com orientação para o retorno seguro à prática.',
+    seoTitle: 'Medicina Esportiva e Regenerativa em Santo Antônio da Platina – PR | Dr. Sergio Leopolski',
+    seoDescription:
+      'Especialista em Lesões Esportivas e Medicina Regenerativa em Santo Antônio da Platina – PR. Dr. Sergio Leopolski (CRM-PR 18945 | TEOT 9708). Avaliação biomecânica, procedimentos guiados por ultrassom e tecnologias avançadas.',
+    heroSubtitle:
+      'Avaliação médica criteriosa de atletas amadores e praticantes de esportes para retorno seguro aos treinos com preservação biomecânica e longevidade muscular.',
+    overviewParagraphs: [
+      'A atuação em Lesões Esportivas e Medicina Regenerativa atende tanto desportistas competitivos quanto praticantes recreativos de corrida, ciclismo, musculação e esportes de quadra em Santo Antônio da Platina e região.',
+      'O Dr. Sergio Leopolski alia sua sólida formação em Ortopedia, pós-graduação pelo Instituto Vita / Cruzeiro do Sul e especialização em Medicina Regenerativa no CETRUS-SP com tecnologia avançada no consultório (ultrassom musculoesquelético, ondas de choque e estimulação eletromagnética SIS Elite), definindo planos terapêuticos personalizados para alívio da dor e regeneração tecidual.'
+    ],
+    clinicalFocusAreas: [
+      'Diagnóstico e reabilitação de entorses, estiramentos e roturas musculares',
+      'Tendinopatias e sobrecargas no joelho, ombro, tornozelo e tendão de Aquiles',
+      'Procedimentos guiados por ultrassom para reparo tecidual e alívio da dor',
+      'Tratamento por Ondas de Choque Radiais e Sistema SIS Elite',
+      'Planejamento estruturado para Return to Play (retorno seguro ao esporte)'
+    ],
+    whenToSeekCare: [
+      'Dor persistente que surge durante ou logo após treinos ou competições',
+      'Lesões musculares recidivantes ou sensação de instabilidade articular',
+      'Fascite plantar, canelite ou tendinite crônica que não respondem ao repouso simples',
+      'Orientação médica especializada antes de intensificar a rotina esportiva'
+    ],
+    diagnosticAndTherapeuticApproach:
+      'Integração entre exame clínico detalhado, ultrassom em tempo real no consultório e tecnologias avançadas de bioestimulação e modulação de carga.',
+    image: '/images/medico-esporte-card.jpg',
+    imageAlt: 'Dr. Sergio Leopolski — Especialista em Medicina Esportiva e Lesões no Esporte',
+    keywords: [
+      'Lesões esportivas em Santo Antônio da Platina',
+      'Médico do esporte Santo Antônio da Platina',
+      'Dr Sergio Leopolski medicina esportiva',
+      'Medicina regenerativa Paraná ortopedia'
     ]
   }
 ];
