@@ -221,23 +221,23 @@ export const ADVANCED_COURSES = [
 export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
   {
     id: 'ultrassom',
-    title: 'Ultrassom Musculoesquelético para Avaliação e Procedimentos Guiados',
+    title: 'Ultrassom musculoesquelético para avaliação e orientação de procedimentos',
     badge: 'Precisão em Tempo Real',
     description:
-      'Utilizado diretamente no consultório tanto para diagnóstico imediato quanto para a realização de infiltrações e bloqueios articulares guiados. Permite visualizar em tempo real ligamentos, tendões, nervos e acompanhar exatamente a trajetória e posição da agulha, garantindo máxima eficácia e segurança ao paciente.',
+      'Utilizado diretamente no consultório para diagnóstico musculoesquelético dinâmico e orientação em tempo real de infiltrações e bloqueios, garantindo assertividade, conforto e segurança ao paciente.',
     features: [
       'Visualização da anatomia dinâmica em tempo real',
-      'Infiltrações e bloqueios anestésicos guiados com alta precisão',
+      'Infiltrações e bloqueios articulares guiados com alta precisão',
       'Minimização do desconforto e otimização do resultado terapêutico',
       'Realização ágil no próprio consultório durante a consulta'
     ]
   },
   {
     id: 'ondas-choque',
-    title: 'Equipamento de Ondas de Choque Radiais',
+    title: 'Equipamento de ondas de choque radiais da BTL',
     badge: 'Terapia Biológica Não Invasiva',
     description:
-      'Tecnologia de ondas de choque de padrão internacional. Ondas acústicas de alta energia que estimulam a neovascularização, aceleram o processo de cicatrização tecidual e promovem alívio efetivo da dor em quadros musculoesqueléticos crônicos e sobrecargas.',
+      'Tecnologia padrão-ouro da BTL de ondas acústicas de alta energia que favorece a resposta biológica de reparo tecidual, estimula a regeneração e promove alívio efetivo da dor em tendinopatias e lesões crônicas.',
     features: [
       'Tratamento padrão-ouro para esporão de calcâneo e fascite plantar',
       'Eficácia comprovada em tendinopatias crônicas (ombro, cotovelo, joelho)',
@@ -247,10 +247,10 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
   },
   {
     id: 'btl-sis',
-    title: 'Sistema SIS Elite — Estimulação Eletromagnética de Alta Intensidade',
+    title: 'Sistema BTL SIS Elite de estimulação eletromagnética de alta intensidade',
     badge: 'Super Inductive System (SIS)',
     description:
-      'O Sistema Super Indutivo (SIS Elite) utiliza campo eletromagnético focado de alta intensidade capaz de atuar em tecidos profundos. Promove alívio analgésico potente, modulação neuromuscular, relaxamento de contraturas, auxílio na consolidação óssea e reabilitação funcional acelerada.',
+      'O Sistema BTL SIS Elite utiliza campo eletromagnético de alta intensidade para atuar profundamente nos tecidos, proporcionando alívio analgésico potente, modulação neuromuscular, relaxamento de contraturas e reabilitação funcional.',
     features: [
       'Alívio rápido de dores articulares, musculares e neuropáticas',
       'Aceleração da regeneração neuromuscular e cicatrização',
