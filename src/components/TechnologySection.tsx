@@ -3,11 +3,11 @@ import {
   ScanLine,
   CircleDot,
   Zap,
+  Droplets,
   CheckCircle2,
   Stethoscope,
   Calendar,
-  ArrowRight,
-  MessageCircle
+  ArrowRight
 } from 'lucide-react';
 import { getWhatsAppUrl, CLINIC_INFO } from '../data/siteConfig';
 
@@ -23,7 +23,7 @@ interface TechItem {
   imageAlt: string;
 }
 
-const THREE_TECH_RESOURCES: TechItem[] = [
+const CLINIC_TECH_RESOURCES: TechItem[] = [
   {
     id: 'ultrassom',
     icon: <ScanLine className="w-5 h-5 text-[#b86835]" />,
@@ -31,7 +31,7 @@ const THREE_TECH_RESOURCES: TechItem[] = [
     title: 'Ultrassom Musculoesquelético',
     subtitle: 'Para avaliação e orientação de procedimentos',
     description:
-      'Utilizado diretamente no consultório para avaliação dinâmica das estruturas articulares e orientação em tempo real de infiltrações e bloqueios, garantindo máxima assertividade, conforto e segurança.',
+      'Utilizado diretamente no consultório para avaliação dinâmica das estruturas articulares e orientação em tempo real de procedimentos e infiltrações, com assertividade, conforto e segurança.',
     features: [
       'Visualização anatômica em tempo real',
       'Infiltrações e bloqueios guiados com precisão',
@@ -45,7 +45,7 @@ const THREE_TECH_RESOURCES: TechItem[] = [
     icon: <CircleDot className="w-5 h-5 text-[#b86835]" />,
     badge: 'Terapia Biológica Não Invasiva',
     title: 'Ondas de Choque Radiais da BTL',
-    subtitle: 'Equipamento de ondas de choque radiais',
+    subtitle: 'Equipamento de ondas acústicas de alta energia',
     description:
       'Tecnologia de padrão internacional da BTL que emite ondas acústicas de alta energia, favorecendo a resposta biológica de reparo tecidual, vascularização e alívio efetivo da dor em lesões crônicas.',
     features: [
@@ -71,6 +71,22 @@ const THREE_TECH_RESOURCES: TechItem[] = [
     ],
     image: '/images/aparelho-btl-sis-elite.jpg',
     imageAlt: 'Aparelho Sistema BTL SIS Elite no consultório do Dr. Sergio Leopolski'
+  },
+  {
+    id: 'terapias-regenerativas',
+    icon: <Droplets className="w-5 h-5 text-[#b86835]" />,
+    badge: 'Medicina Regenerativa',
+    title: 'Terapias Regenerativas',
+    subtitle: 'PRP, i-PRF e BMA no consultório',
+    description:
+      'Tratamento biológico de lesões musculares e artrose de joelho por meio de terapias celulares e bioestimuladores como PRP (Plasma Rico em Plaquetas), i-PRF e BMA, focando na reparação tecidual e na preservação articular.',
+    features: [
+      'Tratamento de lesões musculares, estiramentos e roturas',
+      'Abordagem biológica para artrose e desgaste no joelho',
+      'Terapias autólogas com PRP, i-PRF e BMA'
+    ],
+    image: '/images/tubo-prp-card.jpg',
+    imageAlt: 'Preparo de PRP (Plasma Rico em Plaquetas) em tubo centrífugo no consultório'
   }
 ];
 
@@ -78,7 +94,7 @@ export const TechnologySection: React.FC = () => {
   return (
     <section
       id="tecnologia"
-      aria-label="Tecnologias e Recursos no Consultório"
+      aria-label="Tecnologias e Tratamentos no Consultório"
       className="py-16 sm:py-20 lg:py-24 bg-[#fbf8f3] bg-silk-waves relative overflow-hidden border-t border-[#ebdccb]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
@@ -86,7 +102,7 @@ export const TechnologySection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7 space-y-4">
             <span className="inline-block text-[11px] font-extrabold uppercase tracking-widest text-[#9c5225] bg-[#f9ede2] px-3.5 py-1 rounded-full border border-[#ebdccb]">
-              Tecnologias no Consultório
+              Tecnologias & Terapias Regenerativas
             </span>
 
             <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2b1810] leading-[1.18] tracking-tight">
@@ -97,7 +113,7 @@ export const TechnologySection: React.FC = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-[#523c30] leading-relaxed max-w-2xl font-normal">
-              O consultório do Dr. Sergio Leopolski na {CLINIC_INFO.clinicName} conta com três recursos modernos dedicados ao diagnóstico de alta precisão, controle ágil da dor e estímulo biológico à recuperação funcional:
+              O consultório do Dr. Sergio Leopolski na {CLINIC_INFO.clinicName} reúne tecnologias médicas avançadas e terapias biológicas regenerativas dedicadas ao diagnóstico preciso, alívio da dor e reparação funcional:
             </p>
 
             <ul className="space-y-2.5 pt-2 text-sm sm:text-base text-[#2b1810] font-medium">
@@ -117,6 +133,12 @@ export const TechnologySection: React.FC = () => {
                 <CheckCircle2 className="w-5 h-5 text-[#b86835] shrink-0 mt-0.5" />
                 <span>
                   <strong className="text-[#2b1810] font-bold">Sistema BTL SIS Elite</strong> de estimulação eletromagnética de alta intensidade.
+                </span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <CheckCircle2 className="w-5 h-5 text-[#b86835] shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-[#2b1810] font-bold">Terapias Regenerativas (PRP, i-PRF e BMA)</strong> para tratamento de lesões musculares e artrose de joelho.
                 </span>
               </li>
             </ul>
@@ -146,25 +168,25 @@ export const TechnologySection: React.FC = () => {
           </div>
         </div>
 
-        {/* 3 Dedicated Technology Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {THREE_TECH_RESOURCES.map((tech) => (
+        {/* 4 Dedicated Technology & Regenerative Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+          {CLINIC_TECH_RESOURCES.map((tech) => (
             <article
               key={tech.id}
-              className="group bg-white rounded-3xl p-6 sm:p-7 border border-[#ebdccb] shadow-sm hover:shadow-xl hover:border-[#b86835]/40 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-white rounded-3xl p-5 sm:p-6 border border-[#ebdccb] shadow-sm hover:shadow-xl hover:border-[#b86835]/40 transition-all duration-300 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between gap-2">
-                  <div className="w-12 h-12 rounded-2xl bg-[#f9ede2] border border-[#ebdccb] flex items-center justify-center shrink-0 group-hover:bg-[#b86835] group-hover:text-white transition-colors duration-300">
+                  <div className="w-11 h-11 rounded-2xl bg-[#f9ede2] border border-[#ebdccb] flex items-center justify-center shrink-0 group-hover:bg-[#b86835] group-hover:text-white transition-colors duration-300">
                     {tech.icon}
                   </div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#9c5225] bg-[#f9ede2] px-3 py-1 rounded-full border border-[#ebdccb]">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-[#9c5225] bg-[#f9ede2] px-2.5 py-1 rounded-full border border-[#ebdccb]">
                     {tech.badge}
                   </span>
                 </div>
 
                 <div>
-                  <h3 className="font-editorial text-2xl font-bold text-[#2b1810] group-hover:text-[#9c5225] transition-colors leading-snug">
+                  <h3 className="font-editorial text-xl sm:text-[1.35rem] font-bold text-[#2b1810] group-hover:text-[#9c5225] transition-colors leading-snug">
                     {tech.title}
                   </h3>
                   <p className="text-xs font-semibold text-[#8c7262] mt-0.5">
@@ -172,12 +194,12 @@ export const TechnologySection: React.FC = () => {
                   </p>
                 </div>
 
-                <p className="text-sm text-[#523c30] leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-[#523c30] leading-relaxed font-normal min-h-[54px]">
                   {tech.description}
                 </p>
 
                 <div className="pt-4 border-t border-[#ebdccb]/60 space-y-2">
-                  <div className="text-xs font-bold uppercase tracking-wider text-[#2b1810]">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-[#2b1810]">
                     Destaques do Recurso:
                   </div>
                   <ul className="space-y-1.5 text-xs text-[#523c30]">
@@ -192,7 +214,7 @@ export const TechnologySection: React.FC = () => {
               </div>
 
               {/* Bottom Thumbnail Image */}
-              <div className="mt-6 rounded-2xl overflow-hidden border border-[#ebdccb]/70 bg-[#f5eee3] aspect-[16/10] relative">
+              <div className="mt-5 rounded-2xl overflow-hidden border border-[#ebdccb]/70 bg-[#f5eee3] aspect-[16/10] relative">
                 <img
                   src={tech.image}
                   alt={tech.imageAlt}
@@ -220,13 +242,13 @@ export const TechnologySection: React.FC = () => {
             {/* Middle Explanation */}
             <div className="hidden lg:block w-px h-10 bg-white/15 shrink-0" />
             <p className="text-xs sm:text-sm text-[#ecd8c7] leading-relaxed flex-1 max-w-2xl font-normal">
-              A indicação dos recursos (ultrassom, ondas de choque ou SIS Elite) é definida de forma personalizada após avaliação médica presencial, de acordo com o diagnóstico e as necessidades de cada paciente.
+              A indicação dos recursos (ultrassom, ondas de choque BTL, SIS Elite ou terapias regenerativas com PRP, i-PRF e BMA) é definida de forma personalizada após avaliação médica presencial, de acordo com o diagnóstico e as necessidades de cada paciente.
             </p>
 
             {/* Right Button */}
             <a
               href={getWhatsAppUrl(
-                'Olá Dr. Sergio! Gostaria de agendar uma avaliação para conhecer os tratamentos com ultrassom, ondas de choque da BTL e o sistema BTL SIS Elite.'
+                'Olá Dr. Sergio! Gostaria de agendar uma avaliação para conhecer os tratamentos com tecnologias avançadas e terapias regenerativas (PRP, i-PRF, BMA).'
               )}
               target="_blank"
               rel="noopener noreferrer"

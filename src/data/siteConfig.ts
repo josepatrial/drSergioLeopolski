@@ -257,6 +257,19 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
       'Fortalecimento muscular e restauração de amplitude articular',
       'Tratamento confortável, seguro e não invasivo'
     ]
+  },
+  {
+    id: 'terapias-regenerativas',
+    title: 'Terapias Regenerativas (PRP, i-PRF e BMA)',
+    badge: 'Medicina Regenerativa',
+    description:
+      'Tratamento biológico especializado para lesões musculares e artrose de joelho por meio de terapias celulares e bioestimuladores como PRP (Plasma Rico em Plaquetas), i-PRF e BMA (Aspirado de Medula Óssea), estimulando o reparo tecidual autólogo.',
+    features: [
+      'Tratamento de lesões musculares, estiramentos e roturas',
+      'Tratamento avançado para artrose e desgaste articular no joelho',
+      'Aplicações autólogas com PRP, i-PRF e BMA',
+      'Procedimento focado na regeneração e preservação articular'
+    ]
   }
 ];
 
