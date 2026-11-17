@@ -75,15 +75,15 @@ const CLINIC_TECH_RESOURCES: TechItem[] = [
   {
     id: 'terapias-regenerativas',
     icon: <Droplets className="w-5 h-5 text-[#b86835]" />,
-    badge: 'Medicina Regenerativa',
-    title: 'Terapias Regenerativas',
-    subtitle: 'PRP, i-PRF e BMA no consultório',
+    badge: 'Terapias Biológicas',
+    title: 'Terapias Biológicas e Regenerativas',
+    subtitle: 'Plasma Rico em Plaquetas (PRP, iPRF e BMA)',
     description:
-      'Tratamento biológico de lesões musculares e artrose de joelho por meio de terapias celulares e bioestimuladores como PRP (Plasma Rico em Plaquetas), i-PRF e BMA, focando na reparação tecidual e na preservação articular.',
+      'Tratamentos modernos que utilizam componentes do próprio paciente para auxiliar na recuperação de lesões articulares, artrose, tendinites e lesões musculares.',
     features: [
-      'Tratamento de lesões musculares, estiramentos e roturas',
-      'Abordagem biológica para artrose e desgaste no joelho',
-      'Terapias autólogas com PRP, i-PRF e BMA'
+      'PRP: plasma rico em plaquetas, com fatores de crescimento que auxiliam na reparação dos tecidos.',
+      'iPRF: fibrina injetável que libera fatores de crescimento gradualmente, auxiliando na cicatrização e reparação cutânea.',
+      'BMA: aspirado de medula óssea, com células progenitoras e componentes bioativos que podem auxiliar no tratamento de lesões osteoarticulares.'
     ],
     image: '/images/tubo-prp-card.jpg',
     imageAlt: 'Preparo de PRP (Plasma Rico em Plaquetas) em tubo centrífugo no consultório'
@@ -138,7 +138,7 @@ export const TechnologySection: React.FC = () => {
               <li className="flex items-start gap-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#b86835] shrink-0 mt-0.5" />
                 <span>
-                  <strong className="text-[#2b1810] font-bold">Terapias Regenerativas (PRP, i-PRF e BMA)</strong> para tratamento de lesões musculares e artrose de joelho.
+                  <strong className="text-[#2b1810] font-bold">Terapias Biológicas e Regenerativas</strong> (PRP, iPRF e BMA) para recuperação de lesões articulares, artrose, tendinites e lesões musculares.
                 </span>
               </li>
             </ul>
@@ -242,13 +242,13 @@ export const TechnologySection: React.FC = () => {
             {/* Middle Explanation */}
             <div className="hidden lg:block w-px h-10 bg-white/15 shrink-0" />
             <p className="text-xs sm:text-sm text-[#ecd8c7] leading-relaxed flex-1 max-w-2xl font-normal">
-              A indicação dos recursos (ultrassom, ondas de choque BTL, SIS Elite ou terapias regenerativas com PRP, i-PRF e BMA) é definida de forma personalizada após avaliação médica presencial, de acordo com o diagnóstico e as necessidades de cada paciente.
+              A indicação dos recursos (ultrassom, ondas de choque BTL, SIS Elite ou terapias biológicas com PRP, iPRF e BMA) é definida de forma personalizada após avaliação médica presencial, de acordo com o diagnóstico e as necessidades de cada paciente.
             </p>
 
             {/* Right Button */}
             <a
               href={getWhatsAppUrl(
-                'Olá Dr. Sergio! Gostaria de agendar uma avaliação para conhecer os tratamentos com tecnologias avançadas e terapias regenerativas (PRP, i-PRF, BMA).'
+                'Olá Dr. Sergio! Gostaria de agendar uma avaliação para conhecer os tratamentos com tecnologias avançadas e terapias biológicas regenerativas (PRP, iPRF e BMA).'
               )}
               target="_blank"
               rel="noopener noreferrer"
