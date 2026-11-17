@@ -347,23 +347,23 @@ export const SPECIALTIES_DATA: SpecialtyItem[] = [
     number: '03',
     title: 'Cirurgia da Mão e do Punho',
     shortDescription:
-      'Diagnóstico e tratamento de doenças e lesões da mão e do punho, com abordagem clínica ou cirúrgica especializada conforme a necessidade de cada paciente.',
+      'Tratamento especializado de lesões da mão e do punho com abordagem clínica ou cirúrgica, incluindo cirurgias por vídeo (artroscopia e procedimentos minimamente invasivos) para recuperação rápida e funcional.',
     seoTitle: 'Cirurgião da Mão em Santo Antônio da Platina – PR | Dr. Sergio Leopolski (RQE 37663)',
     seoDescription:
-      'Especialista em Cirurgia da Mão e do Punho no Paraná. Membro titular da Associação Brasileira de Cirurgia da Mão (ABCM). Dr. Sergio Leopolski em Santo Antônio da Platina.',
+      'Especialista em Cirurgia da Mão, Punho e Cirurgias por Vídeo (Artroscopia) no Paraná. Membro titular da Associação Brasileira de Cirurgia da Mão (ABCM). Dr. Sergio Leopolski em Santo Antônio da Platina.',
     heroSubtitle:
-      'Precisão anatômica e refinamento microcirúrgico para restaurar sensibilidade, destreza e força das mãos e punhos.',
+      'Tratamento de lesões da mão e do punho com abordagem clínica ou cirúrgica, incluindo cirurgias por vídeo (artroscopia) para máxima precisão anatômica e rápida reabilitação.',
     overviewParagraphs: [
-      'A mão e o punho exigem precisão anatômica absoluta. Formado em Cirurgia da Mão e Microcirurgia pela Universidade Federal do Paraná (UFPR), Membro Titular da Associação Brasileira de Cirurgia da Mão (ABCM) e com treinamento em artroscopia do punho no CETRUS, o Dr. Sergio Leopolski possui dedicação aprofundada a essa subespecialidade.',
-      'O manejo contempla desde estratégias conservadoras, bloqueios e imobilizações personalizadas até procedimentos cirúrgicos minuciosos para resolução de síndromes compressivas e lesões tendíneas.'
+      'A mão e o punho exigem precisão anatômica absoluta. Formado em Cirurgia da Mão e Microcirurgia pela Universidade Federal do Paraná (UFPR) e Membro Titular da Associação Brasileira de Cirurgia da Mão (ABCM), o Dr. Sergio Leopolski realiza cirurgias por vídeo (artroscopia de punho e técnicas minimamente invasivas), permitindo incisões reduzidas, menor agressão tecidual e retorno mais rápido às atividades diárias e profissionais.',
+      'A atuação contempla o tratamento de lesões na mão tanto na esfera clínica (bloqueios, infiltrações guiadas e imobilizações direcionadas) quanto na cirúrgica, abrangendo fraturas, lesões de tendões e ligamentos, cistos, artrose e síndromes compressivas nervosas.'
     ],
     clinicalFocusAreas: [
+      'Cirurgias por vídeo (artroscopia de punho e procedimentos minimamente invasivos)',
+      'Tratamento de lesões na mão e punho (abordagem clínica ou cirúrgica)',
       'Síndrome do túnel do carpo (dormência e formigamento nos dedos)',
       'Dedo em gatilho e Tenossinovite de De Quervain',
-      'Cistos sinoviais de punho e dedos',
-      'Rizartrose (artrose na base do polegar) e artrose dos dedos',
-      'Fraturas do rádio distal, escafóide e ossos metacarpais/falanges',
-      'Lesões ligamentares e instabilidades cárpicas'
+      'Cistos sinoviais, fraturas e lesões ligamentares do punho e dedos',
+      'Rizartrose (artrose na base do polegar) e reconstruções funcionais'
     ],
     whenToSeekCare: [
       'Acordar com os dedos das mãos formigando ou dormentes',
@@ -372,14 +372,15 @@ export const SPECIALTIES_DATA: SpecialtyItem[] = [
       'Dor no punho após quedas ou movimentos repetitivos de digitação'
     ],
     diagnosticAndTherapeuticApproach:
-      'Testes neurofuncionais específicos, ultrassonografia do punho em tempo real e tratamento individualizado para restaurar a integridade funcional.',
+      'Testes neurofuncionais específicos, ultrassonografia do punho em tempo real no consultório e indicação precisa entre abordagem clínica ou cirurgia por vídeo.',
     image: '/images/medico-cirurgia.jpg',
-    imageAlt: 'Dr. Sergio Leopolski realizando cirurgia da mão no centro cirúrgico com lupa cirúrgica e equipe',
+    imageAlt: 'Dr. Sergio Leopolski realizando cirurgia da mão e punho no centro cirúrgico com equipe',
     keywords: [
+      'Cirurgia da mão por vídeo Santo Antônio da Platina',
+      'Artroscopia de punho Paraná',
       'Cirurgião da mão em Santo Antônio da Platina',
       'Dr Sergio Leopolski cirurgia da mão',
-      'Síndrome do túnel do carpo Santo Antônio da Platina',
-      'Especialista em punho e mão Paraná'
+      'Tratamento de lesões na mão clínica ou cirúrgica'
     ]
   }
 ];

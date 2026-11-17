@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ profile }) => {
             {/* Eyebrow Specialties - Exact as Mockup */}
             <div className="pt-2">
               <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-[0.24em] text-[#9c5225]">
-                ORTOPEDIA • CIRURGIA DA MÃO • ESPORTE • REGENERATIVA
+                ORTOPEDIA • CIRURGIA DA MÃO • MEDICINA ESPORTIVA E REGENERATIVA
               </span>
             </div>
 
