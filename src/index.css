@@ -10,16 +10,16 @@
     font-size: 16px;
   }
 
-  /* Escala proporcional confortável para desktops (efeito zoom natural de ~120% a 125%) */
+  /* Escala proporcional equilibrada (zoom nativo calibrado exatamente em 115%) */
   @media (min-width: 1024px) {
     html {
-      font-size: 18px;
+      font-size: 17.6px;
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1280px) {
     html {
-      font-size: 19.5px;
+      font-size: 18.4px; /* Exatos 115% de 16px (16 * 1.15 = 18.4px) */
     }
   }
 
