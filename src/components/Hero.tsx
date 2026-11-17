@@ -1,16 +1,5 @@
 import React from 'react';
-import {
-  MessageCircle,
-  ArrowRight,
-  MapPin,
-  Activity,
-  User,
-  ShieldCheck,
-  ScanLine,
-  Feather,
-  Crosshair,
-  Layers
-} from 'lucide-react';
+import { MessageCircle, ArrowRight, MapPin, Activity, User } from 'lucide-react';
 import { CLINIC_INFO, getWhatsAppUrl, EditableDoctorProfile } from '../data/siteConfig';
 
 interface HeroProps {
@@ -193,83 +182,6 @@ export const Hero: React.FC<HeroProps> = ({ profile }) => {
                     </span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Featured Ultrasound Card - Exact as Mockup 1 */}
-        <div className="mt-10 lg:mt-12 bg-white/95 rounded-3xl p-6 sm:p-8 lg:p-9 border border-[#ebdccb] shadow-lg shadow-[#2b1810]/5 transition-all">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-            {/* Left Content */}
-            <div className="lg:col-span-7 space-y-4">
-              <div className="flex items-center gap-3.5">
-                <div className="w-12 h-12 rounded-2xl bg-[#f9ede2] border border-[#ebdccb] flex items-center justify-center text-[#b86835] shrink-0 shadow-sm">
-                  <ScanLine className="w-6 h-6" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#9c5225]">
-                    Diferencial no Consultório
-                  </span>
-                  <h2 className="font-editorial text-xl sm:text-2xl lg:text-[1.65rem] font-bold text-[#2b1810] tracking-tight">
-                    PROCEDIMENTOS GUIADOS POR ULTRASSOM
-                  </h2>
-                </div>
-              </div>
-
-              <p className="text-sm sm:text-base text-[#523c30] leading-relaxed">
-                Infiltrações articulares e bloqueios de nervos periféricos são realizados no próprio consultório, com precisão e segurança. O ultrassom permite visualizar detalhadamente a anatomia e acompanhar a posição da agulha em tempo real, proporcionando um tratamento mais seguro e eficaz.
-              </p>
-
-              {/* 3 Sub-Cards from Mockup 1 */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                <div className="p-3.5 rounded-2xl bg-[#fbf8f3] border border-[#ebdccb] flex items-start gap-2.5">
-                  <Feather className="w-4 h-4 text-[#b86835] shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-[11px] font-bold uppercase tracking-wider text-[#2b1810]">
-                      CONFORTO
-                    </div>
-                    <div className="text-xs text-[#523c30] mt-0.5">
-                      Sem necessidade de internação
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-3.5 rounded-2xl bg-[#fbf8f3] border border-[#ebdccb] flex items-start gap-2.5">
-                  <Crosshair className="w-4 h-4 text-[#b86835] shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-[11px] font-bold uppercase tracking-wider text-[#2b1810]">
-                      PRECISÃO
-                    </div>
-                    <div className="text-xs text-[#523c30] mt-0.5">
-                      Visualização em tempo real
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-3.5 rounded-2xl bg-[#fbf8f3] border border-[#ebdccb] flex items-start gap-2.5">
-                  <Layers className="w-4 h-4 text-[#b86835] shrink-0 mt-0.5" />
-                  <div>
-                    <div className="text-[11px] font-bold uppercase tracking-wider text-[#2b1810]">
-                      TRATAMENTO
-                    </div>
-                    <div className="text-xs text-[#523c30] mt-0.5">
-                      Individualizado para a sua necessidade
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Photo from Mockup 1 */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-[#ebdccb] shadow-md bg-[#f5eee3] aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] group">
-                <img
-                  src="/images/tech-ultrassom-consultorio.jpg"
-                  alt="Dr. Sergio Leopolski realizando ultrassom com visualização em tempo real"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>
