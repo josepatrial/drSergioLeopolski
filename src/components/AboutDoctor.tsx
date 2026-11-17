@@ -185,7 +185,7 @@ export const AboutDoctor: React.FC<AboutDoctorProps> = ({ profile }) => {
                 const isEven = index % 2 === 0;
                 return (
                   <div
-                    key={item.year}
+                    key={`${item.year}-${item.title}`}
                     className={`relative flex flex-col lg:flex-row items-center ${
                       isEven ? 'lg:flex-row-reverse' : ''
                     }`}

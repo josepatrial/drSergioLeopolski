@@ -91,7 +91,7 @@ export const DEFAULT_DOCTOR_PROFILE: EditableDoctorProfile = {
   experienceYears: 'Mais de 25 anos de dedicação médica',
   academicFormation: 'Graduação em Medicina pela Universidade Federal de Pelotas (UFPel - RS) em 2001',
   residencyAndTraining: 'Ortopedia e Traumatologia na Santa Casa de Marília (SP) e Cirurgia da Mão e Microcirurgia na UFPR',
-  societyMemberships: 'Membro Titular SBOT (2006), ABCM (2007) e Membro Internacional AAOS (2012)',
+  societyMemberships: 'Membro Titular SBOT (2005), ABCM (2007) e Membro Internacional AAOS (2012)',
   additionalBioNotes: 'Pós-graduado em Medicina Esportiva (Cruzeiro do Sul / Instituto Vita) e pós-graduando em Medicina Regenerativa e Reparativa (CETRUS - SP).'
 };
 
@@ -157,9 +157,15 @@ export const DOCTOR_TIMELINE: TimelineEvent[] = [
   },
   {
     year: '2002–2005',
-    title: 'Residência em Ortopedia e Traumatologia & Título TEOT',
-    institution: 'Santa Casa de Marília (SP)',
-    description: 'Formação cirúrgica especializada e obtenção do Título de Especialista em Ortopedia e Traumatologia.',
+    title: 'Residência em Ortopedia e Traumatologia',
+    institution: 'Santa Casa de Misericórdia de Marília (SP)',
+    description: 'Formação cirúrgica especializada e treinamento intensivo no atendimento ao trauma e afecções ortopédicas.'
+  },
+  {
+    year: '2005',
+    title: 'Membro Titular SBOT',
+    institution: 'Sociedade Brasileira de Ortopedia e Traumatologia (SBOT)',
+    description: 'Titulação oficial conferida após aprovação em rigoroso exame nacional de especialista.',
     badge: 'TEOT nº 9708'
   },
   {
@@ -169,16 +175,11 @@ export const DOCTOR_TIMELINE: TimelineEvent[] = [
     description: 'Aprofundamento na anatomia complexa, microcirurgia reconstrutiva e biomecânica de mãos e punhos.'
   },
   {
-    year: '2006',
-    title: 'Membro Titular SBOT',
-    institution: 'Sociedade Brasileira de Ortopedia e Traumatologia',
-    description: 'Titulação oficial conferida pela principal instituição ortopédica do país.'
-  },
-  {
     year: '2007',
     title: 'Membro Titular ABCM',
-    institution: 'Associação Brasileira de Cirurgia da Mão',
-    description: 'Reconhecimento de excelência técnica na subespecialidade cirúrgica da mão.'
+    institution: 'Associação Brasileira de Cirurgia da Mão (ABCM)',
+    description: 'Titulação oficial conferida após aprovação em rigoroso exame na subespecialidade cirúrgica da mão.',
+    badge: 'Membro Titular'
   },
   {
     year: '2012',
