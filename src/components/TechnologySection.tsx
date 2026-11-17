@@ -37,8 +37,8 @@ const THREE_TECH_RESOURCES: TechItem[] = [
       'Infiltrações e bloqueios guiados com precisão',
       'Procedimento ambulatorial no próprio consultório'
     ],
-    image: '/images/tech-ultrassom-consultorio.jpg',
-    imageAlt: 'Dr. Sergio Leopolski utilizando ultrassom musculoesquelético no consultório'
+    image: '/images/medico-ultrassom-card-43.jpg',
+    imageAlt: 'Dr. Sergio Leopolski realizando procedimento guiado por ultrassom no consultório'
   },
   {
     id: 'ondas-choque',
@@ -192,7 +192,7 @@ export const TechnologySection: React.FC = () => {
               </div>
 
               {/* Bottom Thumbnail Image */}
-              <div className="mt-6 rounded-2xl overflow-hidden border border-[#ebdccb]/70 bg-[#f5eee3] aspect-[2/1] relative">
+              <div className="mt-6 rounded-2xl overflow-hidden border border-[#ebdccb]/70 bg-[#f5eee3] aspect-[16/10] relative">
                 <img
                   src={tech.image}
                   alt={tech.imageAlt}
