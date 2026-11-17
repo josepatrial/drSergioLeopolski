@@ -269,6 +269,18 @@ export const CLINIC_TECHNOLOGY: TechnologyItem[] = [
       'iPRF: fibrina injetável que libera fatores de crescimento gradualmente, auxiliando na cicatrização e reparação cutânea.',
       'BMA: aspirado de medula óssea, com células progenitoras e componentes bioativos que podem auxiliar no tratamento de lesões osteoarticulares.'
     ]
+  },
+  {
+    id: 'terapias-regenerativas',
+    title: 'Terapias Biológicas e Regenerativas',
+    badge: 'Terapias Biológicas',
+    description:
+      'Tratamentos modernos que utilizam componentes do próprio paciente para auxiliar na recuperação de lesões articulares, artrose, tendinites e lesões musculares.',
+    features: [
+      'PRP: plasma rico em plaquetas, com fatores de crescimento que auxiliam na reparação dos tecidos.',
+      'iPRF: fibrina injetável que libera fatores de crescimento gradualmente, auxiliando na cicatrização e reparação cutânea.',
+      'BMA: aspirado de medula óssea, com células progenitoras e componentes bioativos que podem auxiliar no tratamento de lesões osteoarticulares.'
+    ]
   }
 ];
 

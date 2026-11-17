@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
                   onClick={() => scrollToSection('especialidades')}
                   className="text-[#edd8c3]/80 hover:text-white transition-colors"
                 >
-                  Especialidades & Condições
+                  Especialidades & Áreas de Atuação
                 </button>
               </li>
               <li>

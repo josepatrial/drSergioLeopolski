@@ -161,7 +161,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                   Início
                 </button>
 
-                {/* Dropdown Especialidades & Condições */}
+                {/* Dropdown Especialidades & Áreas de Atuação */}
                 <div
                   className="relative flex items-center"
                   onMouseEnter={() => setSpecialtiesDropdownOpen(true)}
@@ -173,7 +173,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                     className="inline-flex items-center gap-1 hover:text-[#b86835] transition-colors py-2 px-1 whitespace-nowrap"
                     aria-expanded={specialtiesDropdownOpen}
                   >
-                    <span>Especialidades & Condições</span>
+                    <span>Especialidades & Áreas de Atuação</span>
                     <ChevronDown
                       className={`w-3.5 h-3.5 transition-transform duration-200 ${
                         specialtiesDropdownOpen ? 'rotate-180 text-[#b86835]' : 'text-[#8c7262]'
@@ -326,7 +326,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 onClick={() => scrollToSection('especialidades')}
                 className="w-full flex items-center justify-between p-3 rounded-xl text-left font-bold text-navy-950 hover:bg-slate-100"
               >
-                <span>Especialidades & Condições</span>
+                <span>Especialidades & Áreas de Atuação</span>
                 <ArrowRight className="w-4 h-4 text-slate-400" />
               </button>
 
