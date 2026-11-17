@@ -84,15 +84,15 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
         {/* Top Professional Bar */}
-        <div className="bg-[#2b1810] text-[#edd8c3] text-[11px] sm:text-xs border-b border-[#412716]">
+        <div className="bg-[#2b1810] text-white text-[11px] sm:text-xs border-b border-[#412716]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-8 sm:h-9 flex items-center justify-between">
             {/* Left: Professional Credentials & Clinic */}
             <div className="flex items-center gap-3 sm:gap-5 truncate">
-              <span className="font-semibold tracking-wide text-[#f3d7c3] flex items-center gap-1.5 shrink-0">
+              <span className="font-semibold tracking-wide text-white flex items-center gap-1.5 shrink-0">
                 <span className="w-2 h-2 rounded-full bg-[#c5743f] animate-pulse"></span>
                 CRM-PR 18945 • TEOT 9708 • RQE 14512 e 37663
               </span>
-              <span className="hidden md:inline-flex items-center gap-1 text-[#d8bfa6]">
+              <span className="hidden md:inline-flex items-center gap-1 text-white">
                 <MapPin className="w-3.5 h-3.5 text-[#c5743f] shrink-0" />
                 {CLINIC_INFO.clinicName} — {CLINIC_INFO.cityState}
               </span>
@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
                 href={CLINIC_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden xl:inline-flex items-center gap-1 text-[#d8bfa6] hover:text-[#fdfcf9] transition-colors"
+                className="hidden xl:inline-flex items-center gap-1 text-white hover:text-white/80 transition-colors"
               >
                 <span>{CLINIC_INFO.instagram}</span>
               </a>
@@ -108,14 +108,14 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
 
             {/* Right: Phone & Hours */}
             <div className="flex items-center gap-4 shrink-0">
-              <span className="hidden lg:inline-flex items-center gap-1.5 text-[#d8bfa6]">
+              <span className="hidden lg:inline-flex items-center gap-1.5 text-white">
                 <Clock className="w-3.5 h-3.5 text-[#c5743f]" />
                 Seg a Sex: 09h às 18h30
               </span>
 
               <a
                 href={CLINIC_INFO.phoneHref}
-                className="hidden sm:inline-flex items-center gap-1.5 text-[#f3d7c3] hover:text-white transition-colors font-medium"
+                className="hidden sm:inline-flex items-center gap-1.5 text-white hover:text-white/80 transition-colors font-medium"
               >
                 <Phone className="w-3.5 h-3.5 text-[#c5743f]" />
                 <span>{CLINIC_INFO.phoneDisplay}</span>
