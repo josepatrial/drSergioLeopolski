@@ -225,6 +225,20 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
               Responsável Técnico Médico: {profile.doctorName} • CRM-PR {CLINIC_INFO.crm} | RQE 14512 e 37663 | {CLINIC_INFO.teot}
             </p>
           </div>
+
+          <div className="flex items-center justify-center pt-2 text-[11px] text-[#edd8c3]/60">
+            <p>
+              Site desenvolvido por{' '}
+              <a
+                href="https://www.patrialsolucoes.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#dfcaa9]/90 hover:text-white hover:underline transition-colors"
+              >
+                www.patrialsolucoes.com.br
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
