@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 import { getWhatsAppUrl, CLINIC_INFO } from '../data/siteConfig';
+import { trackWhatsAppClick } from '../services/analyticsTracker';
 
 export const FloatingWhatsApp: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ export const FloatingWhatsApp: React.FC = () => {
       <div className="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-3">
         <a
           href={getWhatsAppUrl()}
+          onClick={() => trackWhatsAppClick()}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Agendar consulta pelo WhatsApp"
@@ -25,6 +27,7 @@ export const FloatingWhatsApp: React.FC = () => {
       <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffdfa] border-t border-[#ebdccb] px-3 py-2.5 shadow-2xl flex items-center gap-2">
         <a
           href={getWhatsAppUrl()}
+          onClick={() => trackWhatsAppClick()}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#b86835] active:bg-[#9a4f27] text-white text-xs font-bold shadow-md transition-all"
