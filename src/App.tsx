@@ -26,6 +26,7 @@ function AppLayout({ profile }: { profile: EditableDoctorProfile }) {
     return (
       <Routes>
         <Route path="/estatisticas" element={<AnalyticsPage profile={profile} />} />
+        <Route path="/estatisticas/*" element={<AnalyticsPage profile={profile} />} />
       </Routes>
     );
   }
