@@ -82,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#fffdfa]">
         {/* Top Professional Bar */}
         <div className="bg-[#2b1810] text-white text-[11px] sm:text-xs border-b border-[#412716]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-8 sm:h-9 flex items-center justify-between">
@@ -127,10 +127,10 @@ export const Navbar: React.FC<NavbarProps> = ({ profile }) => {
         {/* Main Navbar */}
         <nav
           aria-label="Navegação Principal"
-          className={`transition-all duration-300 ${
+          className={`transition-all duration-300 bg-[#fffdfa] ${
             isScrolled
-              ? 'bg-[#fffcf8]/98 backdrop-blur-md shadow-premium border-b border-[#ebdccb]'
-              : 'bg-[#fffcf8]/95 backdrop-blur-sm border-b border-[#ebdccb]/60'
+              ? 'bg-[#fffdfa] shadow-md border-b border-[#ebdccb]'
+              : 'bg-[#fffdfa] border-b border-[#ebdccb]/60'
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-4">

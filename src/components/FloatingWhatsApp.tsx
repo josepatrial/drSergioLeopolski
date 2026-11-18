@@ -22,7 +22,7 @@ export const FloatingWhatsApp: React.FC = () => {
       </div>
 
       {/* Mobile Sticky Bottom Fast-Bar (Thumb zone for instant conversion) */}
-      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffcf8]/95 backdrop-blur-md border-t border-[#ebdccb] px-3 py-2.5 shadow-2xl flex items-center gap-2">
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#fffdfa] border-t border-[#ebdccb] px-3 py-2.5 shadow-2xl flex items-center gap-2">
         <a
           href={getWhatsAppUrl()}
           target="_blank"
